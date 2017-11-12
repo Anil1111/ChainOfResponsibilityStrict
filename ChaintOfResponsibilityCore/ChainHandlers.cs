@@ -10,7 +10,7 @@ namespace ChaintOfResponsibilityCore
     {
         public override string DoResponsibility(bool passIt)
         {
-            if (handler as ChainAnimatorHandler == null)
+            if (!(handler is ChainAnimatorHandler))
             {
                 return $"Animator handles {this.handler.DoResponsibility(passIt)}";
             }
@@ -38,3 +38,4 @@ namespace ChaintOfResponsibilityCore
         }
     }
 }
+

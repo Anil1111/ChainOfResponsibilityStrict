@@ -8,7 +8,7 @@ namespace ChaintOfResponsibilityCore
 {
     public abstract class ChainHandler : IChainHandler
     {
-        protected IChainHandler handler;
+        public IChainHandler handler;
         public void ConfigurHandler(IChainHandler handler)
         {
             this.handler = handler;
